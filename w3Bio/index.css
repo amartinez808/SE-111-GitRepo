@@ -72,19 +72,17 @@ header {
 	
 }
 nav {
-	float:right;
-	margin-top:20px ;
 	
 }
 
 .btn {
 
 	display:block;
-	float: left;
-	padding: 20px;
+	float: right;
+	padding: 5px;
 	text-decoration-color: #5b8370;
 	text-underline-position: inherit;
-	margin-right: 0px;
+	margin-right: 10px;
 	
 }
 
