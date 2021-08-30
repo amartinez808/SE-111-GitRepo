@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antonio Martinez ">
+    <meta name="description" content="Week 6 JS Intro">
+    <title>Week 6 | JS Intro</title>
+</head>
+<body>
+    <!--need some sort of HTML in the file-->
+    <h1>Week 6 | Calculator</h1>
+    <!--IN DOC JAVASCRIPT-->
+    
+    <!--in-document: lives within the .html-->
+    <script>
+        var rate = prompt("Enter pay rate: ")
+        rate = Number(rate)
+        
+
+        var hours = prompt("Enter hours worked: ")
+        hours = Number(hours)
+
+        var gross = rate * hours 
+        var g = gross.toFixed(2)
+      
+       
+
+        var tax = gross * .20
+        var t = tax.toFixed(2)
+        
+
+        var net = gross - tax
+        var n = net.toFixed(2)
+        
+
+
+
+        alert(`the Gross Pay is: \n${g}`)
+        alert(`Uncle Sam's Share : \n${t}`)
+        alert(`Net Pay: \n${n}`)
+
+
+
+
+        console.log(gross)    //often used for testing
+        console.log(tax)    
+        console.log(net)
+
+      
+
+        
+    
+        
+
+
+    </script>
+</body>
+</html>
