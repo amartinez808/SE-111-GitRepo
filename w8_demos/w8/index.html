@@ -21,7 +21,7 @@
 				<td><label for="last">Last Name</label></td>
 				<td><input id="last" type="text" name="last" placeholder="Drago"></td>
 			</tr>
-			<tr>
+			<tr> 
 				<td></td>
 				<td><input id="button" type="button" value="submit"></td>
 			</tr>
@@ -36,9 +36,9 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		var first = document.querySelector(`first`)
-		var last = document.querySelector(`last`)
-		var button = document.querySelector(`button`)
+		var firstN = document.querySelector(`#first`)
+		var lastN = document.querySelector(`#last`)
+		
 		
 	
 
@@ -70,68 +70,68 @@
 			    //1. first: will be a string that uses the first Input's value
 				//2. last: will be a string that uses the last Input's value
 
-            var person = {
-				first:first.value,
-				last:last.value
-			
+        		var person = {
+				first: firstN.value,
+				last: lastN.value
 
-
-
-            }//end of person object
+			}//end of person object
 
 
 
 
 			//Add the person object into the people array by using the .push() array method.
-			
+			people.push(person)
 
-			//Bubble sort people on the last name
+				//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
 			{
 				for(let j=0; j < people.length-1; j++)
 				{
 					if(people[j].last > people[j+1].last)
 					{
-						let temp = people[j]
-						people[j] = people[j+1]
-						people[j+1] = temp
+							let temp = people[j]
+							people[j] = people[j+1]
+							people[j+1] = temp
 					}
 				}
 			}//end of bubble sort algorithm!
 
-			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-			console.log(people)
+				//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
+				console.log(people)
 
-			//create a variable called 'output' that has an empty string value stored to 
-			var output = ``
+				//create a variable called 'output' that has an empty string value stored to 
+				var output = ``
 
-			//Loop through the objects in the people array
-			for(let index = 0; index < person.length; index++)
-            {
+				//Loop through the objects in the people array
+			for(let i = 0; i < people.length; i++)
+			{
 
 				//Loop through each property in the object
 				for(key in people[i])
-                {
+				{
+					output += `<p>${key.toUpperCase()}: ${people[i][key]}</p>`
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
+					
+
+				}
+				//add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
 				
-
-                }
-                //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
-
-
+				output+= `<hr>`
 			}//end of loop going through people array to edit 'output'
+			
 
 				//log the output string
-				//replace the outputDiv's inner HTML with the output string
+				console.log(output)
 				
+				//replace the outputDiv's inner HTML with the output string
+				document.querySelector(`#output`).innerHTML = output
 
 
 
-		}
+		} 
 	
     </script>
     
