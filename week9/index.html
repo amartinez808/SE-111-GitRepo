@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta author= "Antonio Martinez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Week 9 | Creating Elements</title>
+
 <style type="text/css">
-	.border{border:2px solid green;}
+	.border{border:4px solid green;}
 </style>
 </head>
 
@@ -61,6 +62,11 @@
 			first:"Marion",
 			last:"Cobretti", 
 			credit:"Cobra" 
+		},
+        {
+			first:"Katie",
+			last:"Truchon", 
+			credit:"Thank you! :)" 
 		}
 		
 	]
@@ -68,10 +74,9 @@
 
 	console.log(people[0].first)//Single value assigned to a property of a specific object in the array
 
-	//get the array of info written to the HTML document page to be viewed in browser
-    //each object's info should have a border, each property value should be in its own paragraph tag
+	
 
-    //select the main element of the document to be able to add to it later
+    //select the main element (body) of the document to be able to add to it later
     //body holds/is responsible for all of the visual content from the page
     var body = document.querySelector(`body`)
     console.log(body)//see the actual HTML element & its children (contents)
