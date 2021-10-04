@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>W3 | Demo</title>
+
+    <!--in-document styling showcase ID and CLASS power-->
+    <style>
+        /* CSS writing */
+        h1{
+            font-size:45px;
+            font-family: Helvetica;
+        }
+        /*selecting elments by ID */
+        #container{
+            width:900px; /* */
+            border:3px solid grey; /* */
+            border-radius: 10px; /* */
+            margin:auto;  /* centers the div in the page, must include widtrh to do this*/
+            padding:20px  /*adds space */
+        }
+
+        /*selecting by CLASS */
+        .bg-main{
+            background-color:slategray;
+            text-align:center;
+            padding:20px;
+            color:blue;
+            border-radius:10px;
+        }
+
+        .border{
+            border:1px solid grey;
+            border-radius:10px;
+        }
+        .section{
+            width:500px;
+            margin:auto;
+            border:qpx solid grey;
+            border-radius:10px;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body style="background-color:lightgrey">
+
+    <!--CONTAINER to hold all page content; allows <body> to handle background-->
+    <div>
+        <!--HEADER-->
+        <div id="header" class="border bg-main">
+            <h1>HOME PAGE</h1>
+        </div>
+
+
+        <!--NAV-->
+        <div id="nav">
+            <a href="index.html"class="nav-link">HOME !</a>
+            <a href="page2.html"class="nav-link">PAGE2 </a>
+            <a href="page3.html"class="nav-link">PAGE3 </a>
+
+        </div>
+
+
+        <!--CONTENT-->
+        <div id="content">
+            <h2></h2>
+            <div class="section">
+                <h3>Section 1</h3>
+             </div>
+
+            <div class="section">
+                <h3>Section 2</h3>
+            </div>
+
+            <div class="section">
+                <h3>Section 3</h3>
+            </div>
+
+            
+        </div>
+                                
+        <!--FOOTER-->
+        <div id="footer">
+            <p>&copy; A MARTINEZ | SE111.02 | 202140</p>
+       </div>
+
+    </div>
+
+</body>
+</html>
