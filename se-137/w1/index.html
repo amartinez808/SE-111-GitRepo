@@ -1,65 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Bio 1 | Antonio Martinez</title>
-<link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio page</title>
+    <style>
+        body{
+            background-color:aquamarine
+        }
+        
+        #education{
+            font-weight:bold;
+            background-color:rgb(119, 119, 108);
+        }
+
+        #hobby{
+            background-color:rgb(188, 207, 188);
+        }
+       
+        .high{
+            font-weight:bold;
+        }
+
+        .uni{
+            font-style:italic;
+        }
+
+        .current{
+            text-decoration:underline;
+            font-family:"Comic Sans MS";
+        }
+        
+        .hide
+        {
+            display:none;
+        }
+        
+       
+    </style>
 </head>
-
 <body>
-	<div id="container">
-		<header>
-			<h1 id="name">Antonio Martinez</h1>
-			
-			<nav>
-				<a class="btn" href="file:///Users/antoniomartinez/Desktop/SE-neit-GitRepo/se-137/w1/index.html" target="_blank">HOME</a>
+    <h1><strong>ANTONIO MARTINEZ</strong></h1>
+    <hr>
 
-				<a class="btn" href="file:///Users/antoniomartinez/Desktop/SE-neit-GitRepo/se-137/w1/schooling.html" target="_blank">EDUCATION</a>
-				
-				<a class="btn" href="https://dashboard.heroku.com/apps/se266first" target="_blank">HOBBIES</a>
-			
-		    </nav>
-			
-			
-		</header>
-		
-		<section>
-		
+    <a href="#" id="education-link">show education</a>
+    <a href="#" id="hobby-link">show hobbies</a>
+    <a href="#" id="all-link">show all</a>
+    <hr>
 
-		
-            <h2 class="title">Antonio's Bio</h2>
+    <div id="education" class="">
+        <p class="high school">CENTRAL FALLS HIGH</p>
+        <p class="uni">UH Manoa</p>
+        <p class="current">NEIT</p>
+        
+    </div>
+    <hr>
 
-            
-            <img src="/w1/images/bikeDraw.jpeg" alt="biker drawing" title="cycling"/>
+    <div id="hobby" class="">
+        <p class="playing chess">CHESS</p>
+        <p class="FUTBOL">Playing Soccer</p>
+        <p class="cycling">Riding Bicycles</p>
+       
+    </div>
+    <hr>
 
-            
+   
+    <script>
+        //links
+        var eLink = document.querySelector(`#education-link`)
+        var hLink = document.querySelector(`#hobby-link`)
+        var aLink = document.querySelector(`#all-link`)
+        //divs
+        var education = document.querySelector(`#education`)
+        var hobby = document.querySelector(`#hobby`)
+        
 
+        eLink.addEventListener(`click`, showEducation)
+        function showEducation(e)
+        {
+            //keeps link from navigating to another URL
+            e.preventDefault()
+            education.classList.remove(`hide`)
+            hobby.classList.add(`hide`)
+         
 
-            <p><strong>About me:</strong>  
-				bla bla blsaa 
-			</p>
-			
-			
-		</section>
-		
-		<aside>
-		
-			<h2>INTEREST:  </h2>
-            <a class="feature" href="https://lapaginamillonaria.com/" target="_blank"><img src="images/logo_riverplate.png" alt="Favourite Soccer Team!"/></a>
+        }
+        hLink.addEventListener(`click`, showHobby)
+        function showHobby(e)
+        {
+            //keeps link from navigating to another URL
+            e.preventDefault()
+            education.classList.add(`hide`)
+            hobby.classList.remove(`hide`)
+           
+
+        }
+      
+
+     
+        aLink.addEventListener(`click`, showAll)
+        function showAll(e)
+        {
+            //keeps link from navigating to another URL
+            e.preventDefault()
+            education.classList.remove(`hide`)
+            hobby.classList.remove(`hide`)
             
-            <a href="https://www.uschess.org" target="_blank"> <img src="images/chess2.JPEG" alt="chessPawn"/></a>
-            
-            <a href="https://www.foodnetwork.com/" target="_blank"><img src="images/Chef-2-icon.png" alt="cooking"/><a>
-            
-            <a href="https://www.youtube.com/watch?v=ou1tvTzRjXc" target="_blank"><img src="images/felt.jpeg" alt="felt"/></a>
-            
-        </aside>
-	
-	<footer>
-		<p class="copy">&copy;2021, CSS Class.</p>
+        }
+
+    </script>
+    <footer>
+		<p class="copy">&copy; Antonio Martinez 2021 | CSS Class.</p>
 
 	</footer>
-	</div>
 
 </body>
 </html>
