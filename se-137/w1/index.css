@@ -1,0 +1,11 @@
+body {
+    background: #f3f3f3;
+    color: #252525;
+    padding: 3rem 0;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+.nav{
+    width: 50%;
+}
