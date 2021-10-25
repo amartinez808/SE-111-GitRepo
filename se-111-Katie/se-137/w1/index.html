@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio page</title>
+    <style>
+        body{
+            background-color:aquamarine
+        }
+        
+        #education{
+            font-weight:bold;
+            background-color:rgb(119, 119, 108);
+        }
+
+        #hobby{
+            background-color:rgb(188, 207, 188);
+        }
+       
+        .high{
+            font-weight:bold;
+        }
+
+        .uni{
+            font-style:italic;
+        }
+
+        .current{
+            text-decoration:underline;
+            font-family:"Comic Sans MS";
+        }
+        
+        .hide
+        {
+            display:none;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <main id="main" class="main">
+        <h1><strong>ANTONIO MARTINEZ</strong></h1>
+
+        <hr>
+        <div id="nav" class = "">
+            <a href="#" id="nav">show education</a>
+            <a href="#" id="nav">show hobbies</a>
+            <a href="#" id="nav">show all</a>
+        </div>  
+        <hr>
+
+        <div id="bio" class="">
+            <h2>Bio-Page</h2>
+            <p class="high school">CENTRAL FALLS HIGH</p>
+            <p class="uni">UH Manoa</p>
+            <p class="current">NEIT</p>
+            
+        </div>
+        <hr>
+
+        <div id="hobby" class="">
+            
+            <p class="playing chess">CHESS</p>
+            <p class="futbol">Playing Soccer</p>
+            <p class="cycling">Riding Bicycles</p>
+        
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum nulla id magni dolorum quae iure assumenda illum, architecto molestiae vitae voluptas voluptates commodi ea aliquam unde facere, hic amet.</p>
+        <hr>
+
+        <img src="../w1/bioImages/bianchi1.jpg" alt="bianchi" style="width:15%">
+        <img src="bioImages/bianchi2.jpg" alt="bianchi" style="width:15%">
+        <img src="bioImages/felt1.jpeg" alt="bianchi" style="width:15%">
+        <img src="bioImages/felt2.jpeg" alt="bianchi" style="width:15%">
+        <img src="bioImages/cerveloProv.jpeg" alt="bianchi" style="width:15%">
+        <img src="bioImages/cerveloProv2.jpeg" alt="bianchi" style="width:15%">
+
+    
+        <script>
+            //links
+            var eLink = document.querySelector(`#education-link`)
+            var hLink = document.querySelector(`#hobby-link`)
+            var aLink = document.querySelector(`#all-link`)
+            //divs
+            var education = document.querySelector(`#education`)
+            var hobby = document.querySelector(`#hobby`)
+            
+
+            eLink.addEventListener(`click`, showEducation)
+            function showEducation(e)
+            {
+                //keeps link from navigating to another URL
+                e.preventDefault()
+                education.classList.remove(`hide`)
+                hobby.classList.add(`hide`)
+            
+
+            }
+            hLink.addEventListener(`click`, showHobby)
+            function showHobby(e)
+            {
+                //keeps link from navigating to another URL
+                e.preventDefault()
+                education.classList.add(`hide`)
+                hobby.classList.remove(`hide`)
+            
+
+            }
+        
+
+        
+            aLink.addEventListener(`click`, showAll)
+            function showAll(e)
+            {
+                //keeps link from navigating to another URL
+                e.preventDefault()
+                education.classList.remove(`hide`)
+                hobby.classList.remove(`hide`)
+                
+            }
+
+        </script>
+        <footer>
+            <p class="copy">&copy; Antonio Martinez 2021 | CSS Class.</p>
+
+        </footer>
+    </main>
+</body>
+</html>
