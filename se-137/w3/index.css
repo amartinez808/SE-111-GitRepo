@@ -1,11 +1,30 @@
-body {
-    background: #f3f3f3;
-    color: #252525;
-    padding: 3rem 0;
-    line-height: 1.5;
-    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  }
+body{
+  background-color:aquamarine
+}
 
-.nav{
-    width: 50%;
+#bio{
+  font-weight:bold;
+  background-color:rgb(119, 119, 108);
+}
+
+#hobby{
+  background-color:rgb(188, 207, 188);
+}
+
+.high{
+  font-weight:bold;
+}
+
+.uni{
+  font-style:italic;
+}
+
+.current{
+  text-decoration:underline;
+  font-family:"Comic Sans MS";
+}
+
+.hide
+{
+  display:none;
 }
