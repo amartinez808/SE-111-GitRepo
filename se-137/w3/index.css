@@ -1,39 +1,85 @@
-body{
-  display: block;
-  margin: 8px;
+@charset "UTF-8";
+
+.hide{
+    display:none;
 }
 
-#nav{
-  display: none;
+.box{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:rgba(0,212,255,1);
+    
+}
+
+.font{
+    font-family: fantasy;
+}
+
+.img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: center;
+}
+
+#all{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main{
+    display:grid;
+    grid-template-areas: 'header header header'
+                         'bio bio bio'
+                         'hobbies ed ed'
+                         'footer footer footer';
+    grid-gap:20px;;
+    padding: 20px 5px 1px 0;
+    background-color:black;
+    align-content: center;
+}
+
+#header{
+    grid-area:header;
+    margin-right:20px;
+    margin-left:20px;
+    background-color: #00a2ff;
+
 }
 
 #bio{
-  font-weight:bold;
-  background-color:rgb(227, 255, 226);
+    grid-area:bio;
+    margin-right:20px;
+    margin-left:20px;
+    
+    background-color: #00a2ff;
+    
 }
 
-#hobby{
-  background-color:rgb(188, 207, 188);
+#hobbies{
+    grid-area:hobbies;
+    margin-right:20px;
+    margin-left:20px;
+    background-color:#00a2ff;
+    
+    
 }
 
-.high{
-  font-weight:bold;
+#ed{
+    grid-area:ed;
+    margin-right:20px;
+    margin-left:20px;
+    background-color:#00a2ff;
 }
 
-.uni{
-  font-style:italic;
-}
-
-.current{
-  text-decoration:underline;
-  font-family:"Comic Sans MS";
-}
-
-.hide
-{
-  display:none;
-}
-.grid-container {
-  display: grid;
-  grid-gap: 50px 100px;
+#footer{
+    grid-area:footer;
+    text-align: center;
+    background-color:#00a2ff;
+    margin-right:20px;
+    margin-left:20px;
 }
