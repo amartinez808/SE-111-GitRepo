@@ -1,0 +1,22 @@
+*{
+    box-sizing: inherit;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+div{
+    background-color: red;
+    min-height: 200px;
+    border:1px solid black;
+    min-width: 300px;
+}
