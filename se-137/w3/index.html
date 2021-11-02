@@ -1,158 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" >
-    <title>Bio page</title>
-   
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css" >
+        <title>Bio page</title>
     
-    <main id="main" class="main">
-
-        <div id ="header" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-
-            <h1> Antonio Martinez</h1>
-
-        </div>
-
-        <!--    Nav     -->
-
-        <div id= "nav" class = 'hide'>
-
-            <a href="#" id="nav">show education</a>
-            <a href="#" id="nav">show hobbies</a>
-            <a href="#" id="nav">show all</a>
+    </head>
+    <body>
         
-        </div>
-        <hr>
+        <main id="main" class="main">
 
-        <!--    Bio    -->
-            
-        <div id="bio" class="">
+            <div id ="header" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
 
-            <div class="box" style= "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                <h2>Bio Page</h2>
-            </div>
-
-            <div class="box">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium laborum sit laboriosam accusantium. Sunt accusantium, delectus tempora minima exercitationem maiores sit non explicabo sed velit illo adipisci odit corporis.</p>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maiores omnis obcaecati dolor libero alias magni labore, quisquam quia asperiores ullam delectus sapiente corrupti explicabo vero, a vel tempora natus.. </p>
-            </div>
-
-
-        <!--        Schooling       -->    
-
-        <div id="ed">
-            
-            <div class="box" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-
-                <h2> Schooling</h2>
+                <h1> Antonio Martinez</h1>
 
             </div>
 
-            <ul>
+            <!--    Nav     -->
 
-               <li>Central Falls High</li> <a href ="https://www.cfschools.net/o/central-falls-high-school" target ="_blank">CF High</a>
+            <div id= "nav" class = 'hide'>
 
-               <li>UH Manoa</li> <a href ="https://manoa.hawaii.edu/" target ="_blank">UH</a>
-                
-                
-               <li>New England Institute of Technology</li> <a href ="https://www.neit.edu/?utm_source=google&utm_medium=organic&utm_campaign=gmb-access" target="_blank">NEIT</a>
-
-            </ul>
-
-            <img src="../w3/bioImages/bianchi2.jpg" alt="bianchi" style="width:10%">
+                <a href="#" id="nav">show education</a>
+                <a href="#" id="nav">show hobbies</a>
+                <a href="#" id="nav">show all</a>
             
-            <img src="../w3/bioImages/felt1.jpeg" alt="felt" style="width:10%">
+            </div>
+            <hr>
 
-            <img src="../w3/bioImages/cerveloProv.jpeg" alt="cervelo"style="width:10%">
-           
-             
-
-        </div>
-
-
-            <!--       HOBBIES     -->
-         <div id="hobbies">
-
-            <div class="box" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            <!--    Bio    -->
                 
-                <h2>HOBBIES</h2>
+            <div id="bio" class="">
 
+                <div class="box" style= "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                    <h2>Bio Page</h2>
+                </div>
+
+                <div class="box">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium laborum sit laboriosam accusantium. Sunt accusantium, delectus tempora minima exercitationem maiores sit non explicabo sed velit illo adipisci odit corporis.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maiores omnis obcaecati dolor libero alias magni labore, quisquam quia asperiores ullam delectus sapiente corrupti explicabo vero, a vel tempora natus.. </p>
+                </div>
+
+
+            <!--        Schooling       -->    
+
+            <div id="ed">
+                
+                <div class="box" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+
+                    <h2> Schooling</h2>
+
+                </div>
+
+                <ul>
+
+                <li>Central Falls High</li> <a href ="https://www.cfschools.net/o/central-falls-high-school" target ="_blank">CF High</a>
+
+                <li>UH Manoa</li> <a href ="https://manoa.hawaii.edu/" target ="_blank">UH</a>
+                    
+                    
+                <li>New England Institute of Technology</li> <a href ="https://www.neit.edu/?utm_source=google&utm_medium=organic&utm_campaign=gmb-access" target="_blank">NEIT</a>
+
+                </ul>
+
+            
             </div>
 
-            <ul>
-
-                <li class="chess">Playing CHESS</li>
-                <li class="futbol">Playing Soccer</li>
-                <li class="cycling">Riding Bicycles</li>
-                <li class= "mvoies">Watching Movies</li> 
-
-            </ul>
-
-            
-            <img src="../w3/bioImages/bikeCartoon.jpeg" alt="bike drawing" style="width:25%">
-            
-
-        </div>
-
-    
-
-
-
-
-        <footer>
-            <p class="copy">&copy; Antonio Martinez 2021 | CSS Class.</p>
-
-        </footer>
-
-    </main>
-    <script>
-        //links
-        var eLink = document.querySelector(`#education-link`)
-        var hLink = document.querySelector(`#hobby-link`)
-        var aLink = document.querySelector(`#all-link`)
-        //divs
-        var education = document.querySelector(`#education`)
-        var hobby = document.querySelector(`#hobby`)
         
 
-        eLink.addEventListener(`click`, showEducation)
-        function showEducation(e)
-        {
-            //keeps link from navigating to another URL
-            e.preventDefault()
-            education.classList.remove(`hide`)
-            hobby.classList.add(`hide`)
-        
 
-        }
-        hLink.addEventListener(`click`, showHobby)
-        function showHobby(e)
-        {
-            //keeps link from navigating to another URL
-            e.preventDefault()
-            education.classList.add(`hide`)
-            hobby.classList.remove(`hide`)
-        
-
-        }
-    
-
-        aLink.addEventListener(`click`, showAll)
-        function showAll(e)
-        {
-            //keeps link from navigating to another URL
-            e.preventDefault()
-            education.classList.remove(`hide`)
-            hobby.classList.remove(`hide`)
+                <!--       HOBBIES     -->
             
-        }
+            <div id="hobbies">
 
-    </script>
-</body>
+                <div class="box" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                    
+                    <h2>HOBBIES</h2>
+
+                </div>
+                <aside> 
+                
+                    <img src="../w3/bioImages/bianchi2.jpg" alt="bianchi" style="width:10%">
+                    
+                    <img src="../w3/bioImages/felt1.jpeg" alt="felt" style="width:10%">
+        
+                    <img src="../w3/bioImages/cerveloProv.jpeg" alt="cervelo"style="width:10%">
+                    
+                </aside>
+
+                <ul>
+
+                    <li class="chess">Playing CHESS</li>
+                    <li class="futbol">Playing Soccer</li>
+                    <li class="cycling">Riding Bicycles</li>
+                    <li class= "mvoies">Watching Movies<li> 
+
+                </ul>
+
+                
+                <img src="../w3/bioImages/bikeCartoon.jpeg" alt="bike drawing" style="width:25%">
+                
+
+            </div>
+        
+
+            <footer>
+                <p class="copy">&copy; Antonio Martinez 2021 | CSS Class.</p>
+
+            </footer>
+
+        </main>
+
+        
+
+
+        <!--    JAvaScRip   t-->
+
+        <script>
+            //links
+            var eLink = document.querySelector(`#education-link`)
+            var hLink = document.querySelector(`#hobby-link`)
+            var aLink = document.querySelector(`#all-link`)
+            //divs
+            var education = document.querySelector(`#education`)
+            var hobby = document.querySelector(`#hobby`)
+            
+
+            eLink.addEventListener(`click`, showEducation)
+            function showEducation(e)
+            {
+                //keeps link from navigating to another URL
+                e.preventDefault()
+                education.classList.remove(`hide`)
+                hobby.classList.add(`hide`)
+            
+
+            }
+            hLink.addEventListener(`click`, showHobby)
+            function showHobby(e)
+            {
+                //keeps link from navigating to another URL
+                e.preventDefault()
+                education.classList.add(`hide`)
+                hobby.classList.remove(`hide`)
+            
+
+            }
+        
+
+            aLink.addEventListener(`click`, showAll)
+            function showAll(e)
+            {
+                //keeps link from navigating to another URL
+                e.preventDefault()
+                education.classList.remove(`hide`)
+                hobby.classList.remove(`hide`)
+                
+            }
+
+        </script>
+        
+    </body>
 </html>
