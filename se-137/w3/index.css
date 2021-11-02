@@ -36,7 +36,7 @@ main{
 
 #all{
     background: #666;
-background: linear-gradient(90deg, rgba(2,0,36,1) 50%, rgb(41, 65, 70) 50%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 50%, rgb(41, 65, 70) 50%);
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
