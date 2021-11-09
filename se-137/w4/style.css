@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+*{
+    box-sizing:border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 491px 390px 250px 250px 360px;
+    grid-template-rows: 388px 481px;
+    grid-template-areas:
+    'banner banner banner banner aside'
+    'left left right right aside';
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+body{
+background-color: #282828;
+color: white;
+}
+
+header, footer{
+    background-color: #070707;
+width: 1820px;
+}
+
+footer{
+    height: 60px;
+}
+
+.container{
+    height: 1080px;
+    width: 1820px;
+}
+span{
+    color:#FC0303;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+aside{
+    background-color: #393939;
+}
+#left{
+    background-color: #393939;
+}
+#right{
+    background-color: #393939;
+}
+#poster{
+    width: 310px;
+}
+
+#banner{
+    background-image: url("../w4/f13_images/banner.png");
+    background-size: 1500px;
+    width: 1440px;
+    grid-area: banner;
+    grid-column: 1 / 5;
+    grid-row: 1 / 1;
+}
+aside{
+    grid-area: aside;
+    grid-column: 5 / 5;
+}
+#left{
+    grid-area: left;
+   /* grid-column: 1 / 1;*/
+    grid-row: 2 / 2;
+    display: flex;
+}
+#right{
+    grid-area: right;
+    /*grid-column: 3 / 4;*/
+    grid-row: 2 / 2;
+}
+#left #two{
+    display: flex;
+}
+h1{
+    font-family: 'Teko', sans-serif;
+    font-size: 48px;
+    color: #BB0908;
+    font-weight: normal;
+    margin: 0;
+    margin-right: 1400px;
+}
+h2{
+    font-family: 'Rock Salt', cursive;
+    font-size: 30px;
+    color: #FF1D29;
+    line-height: 72px;
+    margin-left: 0.83em;
+}
+#left p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 1em;
+}
+#right p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+}
+aside p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+#ad a
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #22C1CB;
+}
+#ad p
+{
+    font-family: 'Teko', sans-serif;
+    font-size: 72px;
+    margin: 0;
+    line-height: 103.18px;
+}
+#left #dvd{
+    width: 200px;
+    height: 200px;
+    margin: 0 30px;
+}
+  #logo,
+  nav {
+    flex: 1;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+ 
+  nav li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  .fa-youtube:before  {
+    background-color: #FF1D29;
+    color: white;
+}
+.fa-snapchat:before, .fa-twitter:before  {
+    background-color: #FF1D29;
+    color: white;
+}
+footer p{
+    font-family: 'Teko', sans-serif;
+    font-size: 12px;
+    padding: 20px;
+}
