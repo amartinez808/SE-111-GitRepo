@@ -1,24 +1,38 @@
 @charset "UTF-8";
 
+*{
+    box-sizing:border-box;
+}
+
+html, body{
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    background-color: chocolate;
+    margin: 0;
+
+}
 body{
-    background-color: yellow;
-}
-
-
-@media (max-width: 1280px)
-{
-    body{
-        background-color: orange;
-    }
-
+    background-color: crimson;
+    font-size: 2em;
 
 }
 
-@media (max-width: 800px)
-{
-    body{
-        background-color: red;
-    }
+main{
+    font-size: 1em;
 
+    background-color: cyan;
+}
+
+div{
+    font-size: 2em;
+
+}
+
+p{
+
+}
+
+span{
 
 }
