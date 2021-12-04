@@ -7,17 +7,11 @@ body {
     background: black;
 
 }
-
-
-
 main {
     flex: 1;
     display: flex;
 
 }
-
-
-
 aside {
     background-color: #505050;
     order: -1;
@@ -25,25 +19,16 @@ aside {
     height: 730px;
 
 }
-
-
-
 * {
     box-sizing: border-box;
 
 }
-
-
-
 section {
     background: #060606;
     height: 730px;
     width: 100%;
 
 }
-
-
-
 article{
     background-color: #373737;
     padding: 10px;
@@ -51,12 +36,10 @@ article{
     height: 730px;
 
 }
-
 header{
     background-color: #505050;
 
 }
-
 nav a:link, a:visited {
     padding: 7px 0px;
     display: inline-block;
@@ -106,7 +89,7 @@ header li{
 #tray{
     width: 12px;
     height: 12px;
-    background: url('sprites.png');
+    background: url('../w6/images/sprites.png');
     background-position: -169px -25px;
 
 }
@@ -136,7 +119,7 @@ a#b2{
 #sprite8{
     width: 11px;
     height: 12px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -170px -121px;
     margin: 0 27.56px 0 10px;
 }
@@ -145,7 +128,7 @@ a#b2{
 #sprite7{
     width: 10px;
     height: 10px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -314px -2px;
     margin: 0 10px 0 27.56px;
 }
@@ -153,21 +136,21 @@ a#b2{
 #sprite13{
     width: 9px;
     height: 12px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -26px -25px;
 }
 
 #sprite17{
     width: 11px;
     height: 13px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -74px -120px;
 }
 
 #sprite11{
     width: 12px;
     height: 8px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -313px -123px;
 
 }
@@ -175,7 +158,7 @@ a#b2{
 #trash{
     width: 11px;
     height: 13px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -458px 0;
 
 }
@@ -183,7 +166,7 @@ a#b2{
 #title{
     width: 11px;
     height: 11px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -217px -2px;
 
 }
@@ -191,7 +174,7 @@ a#b2{
 #bars{
     width: 11px;
     height: 12px;
-    background-image: url('sprites.png');
+    background-image: url('../w6/images/sprites.png');
     background-position: -410px -1px;
 }
 
