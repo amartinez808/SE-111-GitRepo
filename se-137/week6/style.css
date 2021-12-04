@@ -16,7 +16,7 @@ main{
 }
 header{
     padding:10px;
-    background-color: crimson;
+    background-color: #505050;
 }
 section{
     display:flex;
