@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+html, body{
+    margin:0;
+    height:100vh;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+ td{
+    border-bottom:1px solid black;
+}
+
+
+
+/*If the page's max-width is 1920px or less all columns will display
+The table head will display the full names for each column
+The <h1> will be 150% of the root element's font-size (Use ems) 
+The text in the table headers will be 100%of the root element's font-size (Use ems) 
+The text in the table body will be 100% of the root element's font-size (Use ems)
+
+If the page's max-width is 1000px or less all columns will display
+The column headers will show as abbreviations
+The <h1> will be 150% of the root element's font-size (Use ems) 
+The text in the table headers will be 100%of the root element's font-size (Use ems) 
+The text in the table body will be 100% of the root element's font-size (Use ems)
+
+If the page's max width is 500px or less only the Name, Id, Avg and Tot columns will show
+(All the stat columns will be hidden)
+The <h1> will be 200% of the root element's font-size (Use ems)
+The text in the table headers will be 150%of the root element's font-size (Use ems) 
+The text in the table body will be 125%of the root element's font-size (Use ems) */
+
+
+@media (max-width: 1920px) {
+    body {
+    
+      background-color: lightblue;
+    }
+    h1{
+        font-size: 1.5rem; 
+    }
+    thead{
+        
+        font-size:1rem;
+    }
+    tbody {
+        font-size:1rem;
+
+    }
+    .abreviation{
+        visibility: hidden;
+    }
+    .full{
+        visibility:visible;
+    }
+
+  }
+  @media only screen and (max-width: 1000px) {
+    body {
+      background-color: green;
+    }
+    h1{
+        font-size: 1.5rem; 
+    }
+    thead{
+        
+        font-size:1rem;
+    }
+    tbody {
+        font-size:1rem;
+
+    }
+    .abreviation{
+        visibility: visible;
+    }
+    .full{
+        visibility: hidden;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    body {
+      background-color: red;
+    }
+    .stat{
+        display: none;
+    }
+    h1{
+        font-size: 2rem; 
+    }
+    thead{
+        
+        font-size:1.5rem;
+    }
+    tbody {
+        font-size:1.25rem;
+
+    }
+    .abreviation{
+        visibility: hidden;
+    }
+    .full{
+        visibility:visible;
+    }
+  }
