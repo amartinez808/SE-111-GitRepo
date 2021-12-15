@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+    font-family: 'Lato', 'sans-serif';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+
+a{
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+img{
+    max-width:100;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 100px;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar{
+    border-bottom: 1px solid rgba(0, 0,0,0.1);
+}
+.logo-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #11245A !important;
+}
+
+.navbar .nav-link{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #E93B81;
+}
+
+#home{
+    background: linear-gradient(#11245aa1, #11245ab3), url(../img/Demon-Slayer-Giyu-Ultimate-Act.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+#home h1 {
+    font-weight: 700;
+    margin: 18px auto;
+}
+
+#home p{
+    max-width: 575px;
+    margin: auto;
+}
+
+.btn{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 18px 28px;
+    border-radius:0;
+}
+
+.btn-brand{
+    background-color:#E93B81;
+    color: #fff;
+}
+
+.btn-brand:hover{
+    background-color:#8c1243;
+    color: #fff;
+}
+.section-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-intro .hline{
+    width: 180px;
+    height: 2px;
+    background-color: rgba(0, 0,0,0.1);
+    margin:auto;
+}
+
