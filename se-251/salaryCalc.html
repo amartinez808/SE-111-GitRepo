@@ -1,6 +1,6 @@
-#Antonio Martinez
-#SE-251
-#week1
+# Antonio Martinez
+# SE-251
+# 01/07/2022
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,20 +10,24 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Salary Calculator</title>
 </head>
-<body>
+<!--gave the body an id so i could use the get function-->
+<body id="demo">
+    
     
     <script>
-        let name = prompt("Enter Name: \t ");
-        if(name != null){
-        document.getElementById("demo").innerHTML = "Hello" +names};
+        var name = prompt("Enter Name: \t ");
+        let names = name;
+        if(names != null){
+        document.getElementById("demo").innerHTML = "Lets take a look at your finances \t" +names};
 
         var hours = prompt("Enter Hours worked: \t ");
         var rate = prompt("Enter your basic hourly rate: \t");
-        var taxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t")
+        var taxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t");
         var gross_pay = parseInt(hours) * parseInt(rate);
         var tax = gross_pay * taxes;
         var net = gross_pay - tax;
 
+        // testing    
         //let names = prompt("Please enter your full name", "Harry Potter");
         
 
