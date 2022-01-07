@@ -1,4 +1,6 @@
-
+#Antonio Martinez
+#SE-251
+#week1
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,26 +8,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Salary Calculator</title>
 </head>
 <body>
+    
     <script>
-        var name = prompt("Enter Name: \t ");
+        let name = prompt("Enter Name: \t ");
+        if(name != null){
+        document.getElementById("demo").innerHTML = "Hello" +names};
+
         var hours = prompt("Enter Hours worked: \t ");
         var rate = prompt("Enter your basic hourly rate: \t");
         var taxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t")
-        
-
         var gross_pay = parseInt(hours) * parseInt(rate);
         var tax = gross_pay * taxes;
         var net = gross_pay - tax;
+
+        //let names = prompt("Please enter your full name", "Harry Potter");
         
 
-        
-
-        document.write("<br>Your Gross pay is \t "+gross_pay);
-        document.write("<br>Your Net income is \t "+net);
-        document.write("<br>Your deductions are \t "+tax);
+        document.write("<br> Gross pay is \t $"+gross_pay);
+        document.write("<br> Net income is \t $"+net);
+        document.write("<br> Deductions are \t $"+tax);
 
     </script>
 </body>
