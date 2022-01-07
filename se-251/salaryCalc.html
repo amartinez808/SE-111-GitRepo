@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter Name: \t ");
+        var hours = prompt("Enter Hours worked: \t ");
+        var rate = prompt("Enter your basic hourly rate: \t");
+        var taxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t")
+        
+
+        var gross_pay = parseInt(hours) * parseInt(rate);
+        var tax = gross_pay * taxes;
+        var net = gross_pay - tax;
+        
+
+        
+
+        document.write("<br>Your Gross pay is \t "+gross_pay);
+        document.write("<br>Your Net income is \t "+net);
+        document.write("<br>Your deductions are \t "+tax);
+
+    </script>
+</body>
+</html>
