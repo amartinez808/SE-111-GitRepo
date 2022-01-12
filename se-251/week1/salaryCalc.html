@@ -25,9 +25,15 @@
         var hours = prompt("Enter Hours worked: \t ");
         var rate = prompt("Enter your basic hourly rate: \t");
         var taxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t");
+
         var gross_pay = parseInt(hours) * parseInt(rate);
+        
         var tax = gross_pay * taxes;
+    
         var net = gross_pay - tax;
+    
+
+        
 
         // testing    
         //let names = prompt("Please enter your full name", "Harry Potter");

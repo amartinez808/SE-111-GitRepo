@@ -1,0 +1,6 @@
+/Users/antoniomartinez/Desktop/SE-neit-GitRepo/week1/week1/obj/Debug/week1.csproj.AssemblyReference.cache
+/Users/antoniomartinez/Desktop/SE-neit-GitRepo/week1/week1/obj/Debug/week1.csproj.CoreCompileInputs.cache
+/Users/antoniomartinez/Desktop/SE-neit-GitRepo/se-251/week1/week1/obj/Debug/week1.csproj.AssemblyReference.cache
+/Users/antoniomartinez/Desktop/SE-neit-GitRepo/se-251/week1/week1/obj/Debug/week1.csproj.CoreCompileInputs.cache
+/Users/antoniomartinez/Desktop/SE-neit-GitRepo/se-251/week1/obj/Debug/week1.csproj.AssemblyReference.cache
+/Users/antoniomartinez/Desktop/SE-neit-GitRepo/se-251/week1/obj/Debug/week1.csproj.CoreCompileInputs.cache
