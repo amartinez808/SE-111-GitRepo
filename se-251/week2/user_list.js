@@ -5,7 +5,7 @@
 //SE251
 let again = "y";
 do {
-    let name = prompt("Enter Name: \t ");
+    let name = prompt("Enter Employee's Name: \t ");
     const names = name;
     //set object {} target property is ['name'] array literal
     //names != null
@@ -16,12 +16,13 @@ do {
     let tHours = prompt("Enter Hours worked: \t ");
     const hours = parseFloat(tHours);
 
-    let tRate = prompt("Enter your basic hourly rate: \t");
+    let tRate = prompt("Enter hourly rate: \t");
     const rate = parseFloat(tRate);
 
     let tTaxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t");
+    const taxes =parseFloat(tTaxes);
     
-
+        //again = to initialize
     if (hours > 0 && rate > 0){
         const gross_pay = hours * rate;
             
@@ -31,11 +32,11 @@ do {
 
         document.write("<br> \t"+names);
         document.write("<br> Gross pay is \t $"+gross_pay);
-        document.write("<br> Net income is \t $"+net);
         document.write("<br> Deductions are \t $"+tax);
+        document.write("<br> Net income is \t $"+net);
 }
     else {
-        alert("One or both entries are invalid");
+        alert("One or more entries are invalid");
     }
 
    again = prompt("Repeat entries? (y/n)", "y");
