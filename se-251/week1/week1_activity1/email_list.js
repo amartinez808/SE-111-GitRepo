@@ -1,13 +1,19 @@
-﻿const $ = selector => document.querySelector(selector);
+﻿//Antonio Martinez
+//Student test scores
+//Activity 1
+//SE251
+
+
+const $ = selector => document.querySelector(selector);
 
 const joinList = evt => {
-    //get user entries from the text boxes
+    //get data from user input
     const email1 = $("#email_1").value;
     const email2 = $("#email_2").value;
     const firstName = $("#first_name").value;
 
 
-    //check user entries
+    //check entries
 
     let isValid = true;
 
@@ -37,7 +43,7 @@ const joinList = evt => {
         $("#first_name_error").textContent = "";
     }
 
-    // cancel form submit if any user entries are invalid
+    // deny submition if user data entrie is invalid
     if (isValid === false) {
         evt.preventDefault();
     }
@@ -47,7 +53,7 @@ const joinList = evt => {
 
 const clearForm = () => {
 
-    //clear text boxes
+    //clear each text-box
     $("#email_1").value = "";
     $("#email_2").value = "";
     $("#first_name").value = "";
@@ -57,16 +63,19 @@ const clearForm = () => {
     $("#email_2_error").textContent = "*";
     $("#first_name_error").textContent = "*";
 
-    //set focus on the first text box after resetting the form
+    //focus for first text-box after resetting the form
     $("#email_1").focus();
 };
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    //hook up click events for both buttons
+
+    //set click events for both buttons
     $("#join_list").addEventListener("click", joinList);
     $("#clear_form").addEventListener("click", clearForm);
 
-    // set focus on first text box after the form loads
+    //focus for first text-box once the form loads
+ 
     $("#email_1").focus();
-});
+    }
+);

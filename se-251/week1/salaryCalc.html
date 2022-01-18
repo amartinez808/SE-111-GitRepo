@@ -10,39 +10,72 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Salary Calculator</title>
 </head>
-<!--gave the body an id so i could use the get function-->
-<body id="demo">
-    
-    
-    <script>
+<!--gave the body an id so i could use later-->
+    <body id="demo">
         
-        var name = prompt("Enter Name: \t ");
-        let names = name;
-        //set object {} target property is ['name'] array literal
-        if(names != null){
-        document.getElementById("demo").innerHTML = "Lets take a look at your finances, \t" +names};
-
-        var hours = prompt("Enter Hours worked: \t ");
-        var rate = prompt("Enter your basic hourly rate: \t");
-        var taxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t");
-
-        var gross_pay = parseInt(hours) * parseInt(rate);
         
-        var tax = gross_pay * taxes;
-    
-        var net = gross_pay - tax;
-    
-
+        <script>
+            let again = "y";
+            do {
+                let name = prompt("Enter Name: \t ");
+                const names = name;
+                //set object {} target property is ['name'] array literal
+                //names != null
+                
+                //document.getElementById("demo").innerHTML = "Lets take a look at your finances, \t" +names
+                    
         
+                let tHours = prompt("Enter Hours worked: \t ");
+                const hours = parseInt(tHours);
 
-        // testing    
-        //let names = prompt("Please enter your full name", "Harry Potter");
-        
+                let tRate = prompt("Enter your basic hourly rate: \t");
+                const rate = parseInt(tRate);
 
-        document.write("<br> Gross pay is \t $"+gross_pay);
-        document.write("<br> Net income is \t $"+net);
-        document.write("<br> Deductions are \t $"+tax);
+                let tTaxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t");
+                const taxes = parseInt(tTaxes);
+            
+                const gross_pay = hours * rate;
+            
+                let tax = gross_pay * taxes;
+            
+                var net = gross_pay - tax;
 
-    </script>
-</body>
+                document.write("<br> "+names);
+                document.write("<br> Gross pay is \t $"+gross_pay);
+                document.write("<br> Net income is \t $"+net);
+                document.write("<br> Deductions are \t $"+tax);
+            
+            
+                again = prompt("Repeat entries? (y/n)", "y");
+
+            } while (again == "y");
+
+            /*while (again == "y"){
+
+                let tNames = prompt("Enter Name: \t ");
+                const names = tNames;
+                //set object {} target property is ['name'] array literal
+                var tHours = prompt("Enter Hours worked: \t ");
+                var tRate = prompt("Enter your basic hourly rate: \t");
+                var tTaxes = prompt("Enter tax rate (Ex: for 20% Enter .20):\t");
+
+                if(names != null){
+                    let tGross_pay =  parseInt(hours) * parseInt(rate);
+                    const gross_pay = parseInt(tGross_pay);
+                    
+                    var tax = gross_pay * tTaxes;
+                
+                    var net = gross_pay - tax;
+                
+
+                    document.write("<br> Gross pay is \t $"+gross_pay);
+                    document.write("<br> Net income is \t $"+net);
+                    document.write("<br> Deductions are \t $"+tax);
+                }
+
+                again = prompt("Repeat entries? (y/n)", "y");
+            };*/
+
+        </script>
+    </body>
 </html>

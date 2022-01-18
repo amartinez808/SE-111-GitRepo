@@ -1,43 +1,37 @@
+<!--Antonio Martiner
+SE-251
+Activity 2A-->
+
+
+
 <html><head>
     <meta charset="utf-8">
     <title>Miles Per Gallon Calculator</title>
 </head>
     <body>
 
-        <h1>The Miles Per Gallon Calculator</h1>
+        <h1 style="color:rgba(0, 0, 255, 0.485);">Miles Per Gallon Calculator</h1>
 
-        <!-- Example of embedding JavaScript within the HTML page: typically for small, self-contained code.  Not best for re-usability-->
-        <!-- To start using JS in the middle of HTML, use the <script> tag  -->
         <script>
 
-            //Notice the change in how we write comments within JS
+            "use strict";   //Recommended, allows many unorthodox coding practices
 
-            //Turns on strict mode, which states we will use some proper coding practices, like using keywords when declaring vars
-            "use strict";   //Recommended to always use this.  JavaScript, even under strict mode, allows many unorthodox coding practices
+            //get miles driven from the user 
+            const miles = parseInt(prompt("Enter miles driven"));
 
-            //get miles driven from the user - my preferred way - keeps each action separate - easier to troubleshoot
-            let tMiles = prompt("Enter miles driven");
-            const miles = parseInt(tMiles);
-
-            //get gallons used from user - considered elegant sometimes because this code does the same as above, but with one line of code.
-            // Takes longer for someone to read/interpret AND harder to troubleshoot as is when there is an issue within this code.
+            //get gallons used from user
             const gallons = parseInt(prompt("Enter gallons of gas used"));
 
-            //calculate mpg - runs fine without the parseFloat function, but here because numeric variables/constants are not locked 
-            // into float or int
+            //calculate mpg 
             const mpg = parseFloat(miles / gallons);
 
-            //Creating output string via concatenation and tamplate literals that allow evaluation of ${variables} within literal strings
-            // Notices that these are neither single nor double quotes.  They are apostrophes (Usually the key to the left of the '1' key)
-            // This key also has '~' on it when the 'shift' key is pressed.
-            const html = `<p><label>Miles: </label>${miles}</p>` +
+            //Creating output string using concatenation, make sure to USE apostrophys ```````````````````
+            const output = `<p><label>Miles: </label>${miles}</p>` +
                 `<p><label>Gallons: </label>${ gallons }</p >` +
                 `<p><label>MPH: </label>${mpg.toFixed(2)}</p>`;
 
-            //Output the results directly to the HTML page. (Easy to do seeing there is very little already existing on this page.)
-            document.write(html);
-        </script><p><label>Miles: </label>NaN</p><p><label>Gallons: </label>NaN</p><p><label>MPH: </label>NaN</p>
+            document.write(output);
 
-
-    </body>
+        </script><p><label>Miles: </label>NaN</p><p><label>Gallons: </label>NaN</p><p><label>Miles-Per-Gallon: </label>NaN</p>
+     </body>
 </html>
