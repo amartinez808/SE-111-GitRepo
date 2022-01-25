@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "SE-neit-GitRepo",
+			"path": "../.."
+		},
+		{
+			"name": "Week2_Sample4_ArrayDrivenTestScores",
+			"path": "../../../Week2_Sample4_ArrayDrivenTestScores"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SE-neit-GitRepo"
+	}
+}
