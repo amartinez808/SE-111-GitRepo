@@ -5,21 +5,16 @@
 
 
 const $ = selector => document.querySelector(selector);
-//email_1  => stuff before @ => Find the @(indexOf), copy the stuff from 0 to @ (exlusive)
 
-//first_name => last 2 characters of the name => Get length (1 greater than last subscript) -> startingPoint = length -2, Copy (substr) 2 chars
+//email_1 || get the stuff before @ => Find the @(indexOf), copy the stuff from pos 0 to the @ 
 
-//smurf / personality trait => copy the first three characters => substr(0, 3)
+//first_name || use last 2 characters of the name => Get length (1 greater than last subscript) -> startingPoint = length -2, Copy (substr) 2 chars
 
-// season => => Does it have an A, U, I
-/* If it has an A, Store an A
- * Else if has an I, Store it
- * else Store the u
- */
+//smurf | personality trait => copy the first three characters => substr(0, 3)
 
-
+// season => => Does it have an A, U, I || If it has an A, Store an A ||Else if has an I else Store the U
+ 
 //birthplace => First chars ()=> substr(0, 2)
-
 
 //Jedi Name = tEmail + tFirst_Name + tSmurf + "-" + tBirthplace + tSeason;
 
@@ -50,11 +45,9 @@ const joinList = evt => {
     tSmurf = tSmurf.substr(0, 3);
 
 
-// season => => Does it have an A, U, I
-/* If it has an A, Store an A
- * Else if has an I, Store it
- * else Store the u
- */
+// season => => Does it have an A, U, I || If it has an A, Store an A  || Else if has an I, Store it  else Store the u
+
+ 
     if (tSeason.indexOf("a", 0) > -1) { tSeason = "a"; }
     else if (tSeason.indexOf("i", 0) > -1) { tSeason = "i"; }
     else { tSeason = "u"; }
@@ -63,12 +56,9 @@ const joinList = evt => {
     tBirthPlace = tBirthPlace.substr(0, 2);
 
     //Jedi Name = tEmail + tFirst_Name + tSmurf + "-" + tBirthplace + tSeason;
-    let jediName = tEmail + tFirstName + tSmurf + "-" + tBirthPlace + tSeason;
+    let jediName = tEmail + tFirstName + tSmurf + " - " + tBirthPlace + tSeason;
 
-    alert("Your Jadi name henceforth will be: " + jediName);
-
-
-
+    alert("Your Shadowalker name henceforth will be: " + jediName);
 
     // cancel form submit if any user entries are invalid
     if (false=== false) {
