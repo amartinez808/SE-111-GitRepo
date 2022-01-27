@@ -1,14 +1,14 @@
 ﻿body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgba(49, 48, 48, 0.153);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(7, 108, 167, 0.256);
     margin: 0 auto;
     width: 670px;
-    border: 3px solid rgba(49, 49, 116, 0.584);
+    border: 3px solid rgba(7, 7, 230, 0.379);
     padding: 0 2em 1em;
 }
 
 h1 {
-    color: purple;
+    color: rgb(6, 121, 245);
 }
 
 div {
