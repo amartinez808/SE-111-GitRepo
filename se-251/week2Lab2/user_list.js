@@ -53,7 +53,7 @@ if (names.length>0){
 
     document.write("<h1>Display results using arrays (INDEX)</h1>");
     for (let i in names) {
-        total = total + names[i];
+        total += names[i];
         document.write(`<p>Score ${parseInt(i) + 1}: ${ names[i]}</p >`);
     }
 

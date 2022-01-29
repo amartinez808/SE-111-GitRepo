@@ -20,9 +20,9 @@ const $ = selector => document.querySelector(selector);
 
 const joinList = evt => {
     //get user entries from the text boxes
-    let tEmail = $("#email_1").value;
-    let tFirstName = $("#first_name").value;
-    let tBirthPlace = $("#birthplace").value;
+    let hourly = $("#hourly").value;
+    let hours = $("#hours").value;
+    let tax = $("#tax").value;
     let tSeason = $("#season").value;
     let tSmurf = $("#smurf").value;
 
@@ -53,12 +53,12 @@ const joinList = evt => {
     else { tSeason = "u"; }
 
     //birthplace => First chars ()=> substr(0, 2)
-    tBirthPlace = tBirthPlace.substr(0, 2);
+    grosspay = hourly * hours;
 
     //Jedi Name = tEmail + tFirst_Name + tSmurf + "-" + tBirthplace + tSeason;
-    let jediName = tEmail + tFirstName + tSmurf + " - " + tBirthPlace + tSeason;
+    let netpay = "net:" + grosspay - taxes ;
 
-    alert("Your Shadowalker name henceforth will be: " + jediName);
+    alert("Your Sith-Name henceforth will be: " + netpay);
 
     // cancel form submit if any user entries are invalid
     if (false=== false) {
