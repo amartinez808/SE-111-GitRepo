@@ -18,15 +18,21 @@ SE251!-->
 </head>
 <body>
     <main>
-        <h1 style="color:rgba(139, 12, 212, 0.753);">Pay Calculator</h1>
+        <h1 style="color:rgba(16, 0, 165, 0.721);">Pay Calculator</h1>
 
         <form id="wages_form" action="join.html" method="get">    
+            <div>
+                <label for="name">Enter Employee Full-Name:</label>
+                <input type="text" id="name" name="name" />   
+                <span id="name_error">*</span>
+            </div>
 
             <div>
                 <label for="hourly">Enter Hourly Pay:</label>
                 <input type="text" id="hourly" name="hourly" />   
                 <span id="hourly_error">*</span>
             </div>
+            
             <div>
                 <label for="hours">Enter hours Worked this week:</label>
                 <input type="text" id="hours" name="hours" />   

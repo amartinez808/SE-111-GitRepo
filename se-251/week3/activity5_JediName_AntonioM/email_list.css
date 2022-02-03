@@ -1,9 +1,9 @@
 ﻿body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgba(1, 37, 58, 0.507);
+    background-color: rgba(2, 82, 128, 0.297);
     margin: 0 auto;
     width: 670px;
-    border: 3px solid rgba(7, 7, 230, 0.379);
+    border: 3px solid rgba(7, 7, 230, 0.249);
     padding: 0 2em 1em;
 }
 
@@ -28,4 +28,8 @@ input {
 
 span {
     color:red;
+}
+#wage_form{
+    color: rgba(245, 6, 6, 0.637);
+
 }
